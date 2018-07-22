@@ -37,6 +37,7 @@ func (d *Driver) Robbing() {
 	go func() {
 		p := <-d.Dispatch.PalceChan
 		d.Passenger = p
+		p.Driver = d
 		fmt.Println(d.Name, "  接单： ", p.Name)
 	}()
 }

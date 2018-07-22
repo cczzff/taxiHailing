@@ -37,8 +37,10 @@ func main() {
 	d1.Robbing()
 	d2.Robbing()
 	time.Sleep(time.Second)
-	d1.Send("go go go ")
-	d1.Send("250RMB ")
+	d1.Send("hello ")
+	d1.Send("mi fans ")
 
+	p1.Send("hello, thank you")
+	p2.Send("thank you very much")
 	time.Sleep(time.Second)
 }
